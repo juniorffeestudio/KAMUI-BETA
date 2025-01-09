@@ -4,33 +4,52 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 --//
 
 local Window = Fluent:CreateWindow({
-    Title = "kamui x Hub beta", --Título do seu Hub
-    SubTitle = "by Teste_ofc90",--sub título do seu Hub
+    Title = "kamui x Hub", --Título do seu Hub
+    SubTitle = "by Júnior_kamui",--sub título do seu Hub
     TabWidth = 160,
     Size = UDim2.fromOffset(560, 350),--Largura e Estatura do seu hub / Tamanho.
     Acrylic = true, --Blur
     Theme = "Darker",--Temas da cor: [ Dark, Darker, White, Rose, Aqua, Amethyst.
     MinimizeKey = Enum.KeyCode.LeftControl --Key para minimizar o seu hub
 })
---//
+
+-------taps---------
+
 
 local Tabs = {
-   Main = Window:AddTab({ Title = "esp", Icon = "cloud" }),
+   Main = Window:AddTab({ Title = "Main", Icon = "cloud" }),
    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
-local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "pegar frutas", Default = false })
+local Tabs = {
+   Main = Window:AddTab({ Title = "troll", Icon = "cloud" }),
+   Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
 
-    Toggle:OnChanged(function()
-SpeedTween = 300
-getgenv().RandomFruit = true
-getgenv().EspFruit = true
-getgenv().Team = "Pirate"
-getgenv().WebhookUrl = ''
-loadstring(game:HttpGet('https://raw.githubusercontent.com/VNT-UNIVERSAL/Panda-Hub/main/Release/fruitfarm.lua'))()
-        print("Toggle changed:", Options.MyToggle.Value)
-    end)
+Tabs.Main:AddButton({
+        Title = "invisível",--título do botão
+        Description = "..",--Descrição do botão
+        Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+        end
+    })
 
-    Options.MyToggle:SetValue(false)
---[[
+Tabs.Main:AddButton({
+        Title = "bring parts",--título do botão
+        Description = "..",--Descrição do botão
+        Callback = function()
+loadstring(game:HttpGet("https://pastefy.app/pYhER1z4/raw"))()
+        end
+    })
 
+local Tabs = {
+   Main = Window:AddTab({ Title = "casas", Icon = "cloud" }),
+   Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
+
+
+
+local Tabs = {
+   Main = Window:AddTab({ Title = "em breve", Icon = "cloud" }),
+   Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
